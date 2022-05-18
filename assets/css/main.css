@@ -1,0 +1,12 @@
+.header-wrapper{
+    background-color: #222;
+    position: relative;
+}
+
+.header{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+/* end header - top */
