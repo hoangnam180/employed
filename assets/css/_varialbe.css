@@ -1,11 +1,78 @@
 :root{
+--swiper-theme-color: linear-gradient(135deg,#ed55c7,#6756ca) !important;
 --white: #FBFBFB;
 --text-color : #484848;
 --bg-small : #EEEEEE;
 --color-hover: linear-gradient(135deg,#ed55c7,#6756ca);
 --pd-section : 24px 40px;
 }
+.p-1{
+    padding: 10px;
+}
+.p-2{
+    padding: 20px;
+}
+.p-3{
+    padding: 30px;
+}
+.p-4{
+    padding: 40px;
+}
+.p-t-1{
+    padding: 10px;
+}
+.p-t-2{
+    padding: 20px;
+}
+.p-t-3{
+    padding: 30px;
+}
+.p-t-4{
+    padding: 40px;
+}
+.p-b-1{
+    padding: 10px;
+}
+.p-b-2{
+    padding: 20px;
+}
+.p-b-3{
+    padding: 30px;
+}
+.p-b-4{
+    padding: 40px;
+}
+.p-l-1{
+    padding: 10px;
+}
+.p-l-2{
+    padding: 20px;
+}
+.p-l-3{
+    padding: 30px;
+}
+.p-l-4{
+    padding: 40px;
+}
+.p-r-1{
+    padding: 10px;
+}
+.p-r-2{
+    padding: 20px;
+}
+.p-r-3{
+    padding: 30px;
+}
+.p-r-4{
+    padding: 40px;
+}
 
+.page-section{
+    padding : var(--pd-section);
+}
+.bg-w{
+    background-color : var(--white);
+}
 .text-hover:hover{
         color: linear-gradient(135deg,#ed55c7,#6756ca);
         background: linear-gradient(135deg,#ed55c7,#6756ca);

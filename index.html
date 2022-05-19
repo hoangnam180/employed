@@ -1,128 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- requite -->
     <link href="http://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/_varialbe.css">
-     <!-- requite -->
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- requite -->
     <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="./assets/css/slide.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
 <style>
+    .category {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 20px;
+        align-items: center;
+        border-top: 1px solid rgba(16, 16, 16, .1);
+        border-bottom: 1px solid rgba(16, 16, 16, .1);
+        padding: 0 40px;
+        height: 45px;
+        background-color: var(--white);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, .1);
+    }
 
+    .category-item {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
 </style>
+
 <body>
     <div class="Employed">
         <!-- Header -->
-            <header class="header-wrapper">
+        <header class="header-wrapper">
             <!-- Header - top-->
-                <div class="header-top">
-                    <div class="header-top-left">
-                        <i class="fas fa-home header-top-left-link"></i>
-                        <a class="header-top-left-link" href="#">Bán hàng cùng Dosiin</a>
-                   </div>
-                   <div class="header-top-right">
-                    <div>
-                       <span class="header-top-right-link">Hotline</span>
-                          <a class="header-top-right-link" href="tel:0906880960">0906.880.960</a>
-                    </div>
-                        <div>
-                            <i class="fab fa-facebook-messenger header-top-right-link" style="margin-right: 3px;"></i>
-                            <a class="header-top-right-link" href="#">Bán hàng</a>
-                        </div>
-                   </div>
+            <div class="header-top">
+                <div class="header-top-left">
+                    <i class="fas fa-home header-top-left-link"></i>
+                    <a class="header-top-left-link" href="#">Bán hàng cùng Dosiin</a>
                 </div>
+                <div class="header-top-right">
+                    <div>
+                        <span class="header-top-right-link">Hotline</span>
+                        <a class="header-top-right-link" href="tel:0906880960">0906.880.960</a>
+                    </div>
+                    <div>
+                        <i class="fab fa-facebook-messenger header-top-right-link" style="margin-right: 3px;"></i>
+                        <a class="header-top-right-link" href="#">Bán hàng</a>
+                    </div>
+                </div>
+            </div>
             <!-- end Header Top -->
             <!-- Header - bottom -->
-                <div class="header-bottom">
-                    <!-- Header-left -->
-                    <ul class="header-bottom-left">
-                        <li class="header-bottom-logo">
-                            <a href="#">
-                                <img src="./assets/imgs/logo.svg" alt="logo">
-                            </a>
-                        </li>
-                        <li class="header-bottom-item">
-                            <a href="#">
-                                <span class="header-bottom-item-text text-hover active">Shopping</span>
-                            </a>
-                        </li>
-                        <li class="header-bottom-item">
-                            <a href="#">
-                                <span class="header-bottom-item-text text-hover">Style</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- end Header-left -->
+            <div class="header-bottom">
+                <!-- Header-left -->
+                <ul class="header-bottom-left">
+                    <li class="header-bottom-logo">
+                        <a href="#">
+                            <img src="./assets/imgs/logo.svg" alt="logo">
+                        </a>
+                    </li>
+                    <li class="header-bottom-item">
+                        <a href="#">
+                            <span class="header-bottom-item-text text-hover active">Shopping</span>
+                        </a>
+                    </li>
+                    <li class="header-bottom-item">
+                        <a href="#">
+                            <span class="header-bottom-item-text text-hover">Style</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- end Header-left -->
 
-                    <!-- Header-center -->
-                    <ul class="header-bottom-center">
-                        <div class="header-center-input">
-                            <input type="text" placeholder="Nhập từ khóa tìm kiếm ">
-                        </div>
-                    </ul>
-                    <!-- end Header-center -->
+                <!-- Header-center -->
+                <ul class="header-bottom-center">
+                    <div class="header-center-input">
+                        <input type="text" placeholder="Nhập từ khóa tìm kiếm ">
+                    </div>
+                </ul>
+                <!-- end Header-center -->
 
-                    <!-- Header-right -->
-                    <ul class="header-bottom-right">
-                        <li class="header-bottom-right-item">
-                            <a href="#">
-                                <i class="far fa-bell"></i>
-                            </a>
-                        </li>
-                        <li class="header-bottom-right-item">
-                            <a href="#">
-                                <i class="fas fa-shopping-bag"></i>
-                            </a>
-                        </li>
-                        <li class="header-bottom-right-items user">
-                           <div class="header-bottom-right-item">
+                <!-- Header-right -->
+                <ul class="header-bottom-right">
+                    <li class="header-bottom-right-item">
+                        <a href="#">
+                            <i class="far fa-bell"></i>
+                        </a>
+                    </li>
+                    <li class="header-bottom-right-item">
+                        <a href="#">
+                            <i class="fas fa-shopping-bag"></i>
+                        </a>
+                    </li>
+                    <li class="header-bottom-right-items user">
+                        <div class="header-bottom-right-item">
                             <a href="#">
                                 <i class="far fa-user"></i>
                             </a>
-                           </div>
-                            
-                            <a class="about-user" href="#">
-                                <span class="about-user-1">Tài khoản</span>
-                                <span class="about-user-2">Xin chào!</span>
-                            </a>
-                            <i class="fas fa-caret-down" style="font-size: 1.6rem;"></i>
-                        </li>
-                    </ul>
-                    <!-- end Header-right -->
-                </div>
-            <!-- end Header - bottom -->
-            </header>
-        <!-- end Header -->
-        
-        <!-- Slide -->
-        <div class="slide">
-            <div class="slide-wrapper center">
-                <div class="slide-item">
-                    <img src="./assets/imgs/slidebot-1.webp" alt="slide-1">
-                </div>
-                <div class="slide-item">
-                    <img src="./assets/imgs/slidebot-2.webp" alt="slide-2">
-                </div>
-                <div class="slide-item">
-                    <img src="./assets/imgs/slidebot-3.webp" alt="slide-3">
-                </div>
+                        </div>
+
+                        <a class="about-user" href="#">
+                            <span class="about-user-1">Tài khoản</span>
+                            <span class="about-user-2">Xin chào!</span>
+                        </a>
+                        <i class="fas fa-caret-down" style="font-size: 1.6rem;"></i>
+                    </li>
+                </ul>
+                <!-- end Header-right -->
             </div>
+            <!-- end Header - bottom -->
+        </header>
+        <!-- end Header -->
+
+        <!-- Slide -->
+        <ul class="category">
+            <li class="category-item text-hover">
+                <a href="#">Sản phẩm</a>
+            </li>
+            <li class="category-item text-hover">
+                <a href="#">Nam</a>
+            </li>
+            <li class="category-item text-hover">
+                <a href="#">Nữ</a>
+            </li>
+            <li class="category-item text-hover">
+                <a href="#">Phụ kiện</a>
+            </li>
+            <li class="category-item text-hover">
+                <a href="#">Thương hiệu</a>
+            </li>
+            <li class="category-item text-hover">
+                <a href="#">Xếp hạng</a>
+            </li>
+            <li class="category-item text-hover">
+                <a href="#">Mới nhất
+                </a>
+            </li>
+            <li class="category-item text-hover">
+                <a href="#">Giá sốc
+                </a>
+            </li>
+            <li class="category-item text-hover">
+                <a href="#">Sự kiện
+                </a>
+            </li>
+
+        </ul>
+        <div class="swiper-container two page-section bg-w" style="margin-top: 1px;padding-bottom: 60px;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider-image">
+                        <img src="./assets/imgs/slidetop-3.webp" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-image">
+                        <img src="./assets/imgs/slidetop-1.webp" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-image">
+                        <img src="./assets/imgs/slidetop-2.webp" alt="">
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
+
+
         <!-- end Slide -->
         <!-- Content -->
-            <div class="content">
+        <div class="content">
 
-            </div>
+        </div>
         <!-- end Content -->
 
         <!-- footer -->
@@ -131,8 +200,10 @@
         </footer>
         <!-- end footer -->
     </div>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="./assets/js/slide.js">
+    </script>
+
 </body>
+
 </html>
