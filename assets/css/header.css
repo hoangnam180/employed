@@ -22,6 +22,7 @@
      align-items: center;
      background-color: var(--white);
      height: 55px;
+     border-bottom: 1px solid #54545454;
  }
  .header-bottom-left, .header-bottom-right{
      list-style: none;
