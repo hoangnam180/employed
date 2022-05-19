@@ -5,3 +5,11 @@
 --color-hover: linear-gradient(135deg,#ed55c7,#6756ca);
 --pd-section : 24px 40px;
 }
+
+.text-hover:hover{
+        color: linear-gradient(135deg,#ed55c7,#6756ca);
+        background: linear-gradient(135deg,#ed55c7,#6756ca);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
