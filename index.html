@@ -25,8 +25,39 @@
     <title>Document</title>
 </head>
 <style>
+        .button.primary{
+            width: 150px;
+            margin: auto;
+            height: 36px;
+            padding: 7px 20px 8px;
+            background: linear-gradient(135deg,#fce6f7,#d5d0f0);
+            border-radius: 999px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 15px;
 
-    
+        }
+        .button.primary span{
+            background: linear-gradient(135deg,#ed55c7,#6756ca);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 14px;
+            font-weight: 600;
+            font-style: normal;
+            line-height: 150%;
+            letter-spacing: .02em;
+            font-family: sf-pro-display;
+            margin: 0 8px;
+            text-align: center;
+        }
 </style>
 
 <body>
@@ -1955,6 +1986,7 @@
                     </li>
                     
                 </ul>
+                <button class="button primary"><span>Xem thêm</span></button>
             </section>
         </div>
         <!-- end Content -->
