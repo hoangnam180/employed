@@ -1,0 +1,107 @@
+.product{
+    margin-top: 15px;
+    background: var(--white);
+}
+.tittle-product{
+    color: var(--text-color);
+}
+.category-product{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    border-top: 1px solid var(--boder-color);
+    border-bottom: 1px solid var(--boder-color);
+    padding: 10px 0;
+    margin-top: 10px;
+    overflow-x:scroll ;
+}
+.category-product::-webkit-scrollbar {
+     display: none;
+}
+.category-product li a{
+    font-weight: 500;
+    font-size : 1.2rem;
+    white-space: nowrap;
+}
+.category-product li a:hover{
+    color: linear-gradient(135deg,#ed55c7,#6756ca);
+    background: linear-gradient(135deg,#ed55c7,#6756ca);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.category-product li.active{
+    color: linear-gradient(135deg,#ed55c7,#6756ca);
+    background: linear-gradient(135deg,#ed55c7,#6756ca);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.category-about{
+    list-style: none;
+    margin-top: 15px;
+    flex-wrap: nowrap;
+    overflow-x:scroll ;
+}
+.category-about.wrap{
+     flex-wrap: wrap;
+}
+
+.category-about::-webkit-scrollbar {
+     display: none;
+}
+.card{
+    overflow: hidden;
+    border-radius:8px;
+    border:1px solid var(--boder-color);
+}
+.card-img{
+    overflow: hidden;
+}
+.card-img img{
+    height: auto;
+    object-fit: cover;
+}
+.card-text{
+    padding: 8px;
+    border-top: 1px solid var(--boder-color);
+}
+.card-title{
+    font-size: 1.4rem;
+    color: var(--text-color-product);
+    margin-bottom: 5px ;
+}
+.card-des{
+    font-size: 1.4rem;
+    color : grey;
+    margin-bottom: 5px;
+}
+.card-price{
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+    letter-spacing: .02em;
+    color: #b3b3b3;
+    margin-right: 3px;
+    text-decoration: line-through;
+}
+.card-price-discount{
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 150%;
+    letter-spacing: .02em;
+    color: #fe252c;
+    margin-bottom: 5px;
+}
+.card-price-cost{
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 150%;
+    letter-spacing: .02em;
+    color: #101010;
+}

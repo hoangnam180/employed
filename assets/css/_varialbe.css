@@ -2,9 +2,14 @@
 --swiper-theme-color: linear-gradient(135deg,#ed55c7,#6756ca) !important;
 --white: #FBFBFB;
 --text-color : #484848;
+--text-color-product : #101010;
 --bg-small : #EEEEEE;
 --color-hover: linear-gradient(135deg,#ed55c7,#6756ca);
 --pd-section : 24px 40px;
+--boder-color : #cccccc78;
+}
+.mt-1{
+    margin-top: 1.5rem;
 }
 .p-1{
     padding: 10px;
@@ -69,9 +74,13 @@
 
 .page-section{
     padding : var(--pd-section);
+    background-color : var(--white);
 }
 .bg-w{
     background-color : var(--white);
+}
+.mt-1{
+    margin-top: 15px;
 }
 .text-hover:hover{
         color: linear-gradient(135deg,#ed55c7,#6756ca);
@@ -79,4 +88,10 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    .truncate {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
